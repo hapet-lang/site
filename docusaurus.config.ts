@@ -97,7 +97,7 @@ const config: Config = {
             },
             {
               label: 'BlueSky',
-              href: 'https://bsky.app/hapet',
+              href: 'https://bsky.app/profile/hapet-lang.bsky.social',
             },
           ],
         },

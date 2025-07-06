@@ -38,8 +38,10 @@ function HomepageHeader() {
         </filter>
       </svg>
 
+      <div className={styles.pureBackground}>
+      </div>
+
       <div className={styles.blurredBackground}>
-        
       </div>
 
       <div className={styles.blurredProccessor}>

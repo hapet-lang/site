@@ -61,9 +61,9 @@ const config: Config = {
       items: [
         {
           type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
+          sidebarId: 'docsSidebar',
           position: 'left',
-          label: 'Tutorial',
+          label: 'Documentation',
         },
         {
           href: 'https://github.com/hapet-lang/hapet/',
@@ -79,7 +79,7 @@ const config: Config = {
           title: 'Docs',
           items: [
             {
-              label: 'Tutorial',
+              label: 'Documentation',
               to: '/docs/intro',
             },
           ],
@@ -92,8 +92,8 @@ const config: Config = {
               href: 'https://stackoverflow.com/questions/tagged/hapet',
             },
             {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/hapet',
+              label: 'Telegram chat',
+              href: 'https://t.me/hapetlang',
             },
             {
               label: 'BlueSky',

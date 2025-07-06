@@ -1,0 +1,350 @@
+.processorContainer {
+  position: absolute;
+  right: 27%;
+  top: 55%;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.processor {
+  position: absolute;
+  right: 0%;
+  top: 0%;
+  width: 80px;
+  height: 80px;
+  z-index: 10;
+}
+
+.processorCore {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(145deg, rgba(0, 100, 100, 0.8), rgba(0, 100, 100, 0.4));
+  border: 1px solid rgba(0, 150, 150, 0.6);
+  border-radius: 8px;
+  box-shadow: 
+    0 0 20px rgba(0, 255, 255, 0.3),
+    inset 0 0 20px rgba(0, 255, 255, 0.1);
+  animation: processorPulse 3s ease-in-out infinite;
+}
+
+.processorGlow {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  background: radial-gradient(circle, rgba(0, 255, 255, 0.2) 0%, transparent 70%);
+  border-radius: 12px;
+  animation: glowPulse 4s ease-in-out infinite;
+}
+
+/* Одна точка над процессором */
+.signalDot {
+  position: absolute;
+  right: 200px;
+  top: -200px;
+  width: 10px;
+  height: 10px;
+  background: rgba(0, 150, 150, 0.9);
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 150, 150, 0.6);
+  animation: dotPulse 2s ease-in-out infinite;
+}
+.signalDot1 {
+  right: 200px;
+  top: -200px;
+}
+.signalDot2 {
+  right: 20px;
+  top: -100px;
+}
+.signalDot3 {
+  right: 120px;
+  top: 170px;
+}
+.signalDot4 {
+  right: -100px;
+  top: -130px;
+}
+.signalDot5 {
+  right: -70px;
+  top: 120px;
+}
+.signalDot6 {
+  right: -170px;
+  top: -10px;
+}
+.signalDot7 {
+  right: 170px;
+  top: 0px;
+}
+
+/* Одна сигнальная линия */
+.signalLine {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: linear-gradient(90deg, rgba(0, 150, 150, 0.8), transparent);
+  transform-origin: right center;
+}
+.signalLine1 {
+  right: 80px;
+  top: 0px;
+  animation: signalMove1 0.6s ease-in-out infinite;
+}
+.signalLine2 {
+  right: 20px;
+  top: 0px;
+  animation: signalMove2 1.2s ease-in-out infinite;
+}
+.signalLine3 {
+  right: 80px;
+  top: 80px;
+  animation: signalMove3 1.1s ease-in-out infinite;
+}
+.signalLine4 {
+  right: 0px;
+  top: 0px;
+  animation: signalMove4 0.9s ease-in-out infinite;
+}
+.signalLine5 {
+  right: 0px;
+  top: 80px;
+  animation: signalMove5 0.8s ease-in-out infinite;
+}
+.signalLine6 {
+  right: 0px;
+  top: 40px;
+  animation: signalMove6 0.7s ease-in-out infinite;
+}
+.signalLine7 {
+  right: 80px;
+  top: 0px;
+  animation: signalMove7 1s ease-in-out infinite;
+}
+
+/* Анимации */
+@keyframes processorPulse {
+  0%, 100% {
+    box-shadow: 
+      0 0 20px rgba(0, 255, 255, 0.3),
+      inset 0 0 20px rgba(0, 255, 255, 0.1);
+  }
+  50% {
+    box-shadow: 
+      0 0 30px rgba(0, 255, 255, 0.5),
+      inset 0 0 30px rgba(0, 255, 255, 0.2);
+  }
+}
+
+@keyframes glowPulse {
+  0%, 100% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.6;
+    transform: scale(1.1);
+  }
+}
+
+@keyframes signalMove1 {
+  0% {
+    opacity: 0;
+    transform: scaleX(0);
+  }
+  20% {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+  50% {
+    right: 80px;
+    top: -200px;
+  }
+  80% {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scaleX(0);
+    right: 200px;
+    top: -200px;
+  }
+}
+
+@keyframes signalMove2 {
+  0% {
+    opacity: 0;
+    transform: scaleX(0);
+  }
+  20% {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+  50% {
+  }
+  80% {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scaleX(0);
+    top: -100px;
+  }
+}
+
+@keyframes signalMove3 {
+  0% {
+    opacity: 0;
+    transform: scaleX(0);
+  }
+  20% {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+  50% {
+    right: 120px;
+    top: 80px;
+  }
+  80% {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scaleX(0);
+    right: 120px;
+    top: 170px;
+  }
+}
+
+@keyframes signalMove4 {
+  0% {
+    opacity: 0;
+    transform: scaleX(0);
+  }
+  20% {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+  50% {
+    right: -100px;
+    top: 0px;
+  }
+  80% {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scaleX(0);
+    right: -100px;
+    top: -130px;
+  }
+}
+
+@keyframes signalMove5 {
+  0% {
+    opacity: 0;
+    transform: scaleX(0);
+  }
+  20% {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+  50% {
+    right: 0px;
+    top: 120px;
+  }
+  80% {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scaleX(0);
+    right: -70px;
+    top: 120px;
+  }
+}
+
+@keyframes signalMove6 {
+  0% {
+    opacity: 0;
+    transform: scaleX(0);
+  }
+  20% {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+  50% {
+    right: -170px;
+    top: 40px;
+  }
+  80% {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scaleX(0);
+    right: -170px;
+    top: -10px;
+  }
+}
+
+@keyframes signalMove7 {
+  0% {
+    opacity: 0;
+    transform: scaleX(0);
+  }
+  20% {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+  50% {
+    top: 0px;
+  }
+  80% {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scaleX(0);
+    right: 170px;
+    top: 0px;
+  }
+}
+
+@keyframes dotPulse {
+  0%, 100% {
+    opacity: 0.7;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.3);
+  }
+}
+
+/* Адаптивность */
+@media screen and (max-width: 768px) {
+  .processor {
+    right: 0%;
+    top: 0%;
+    width: 60px;
+    height: 60px;
+  }
+
+  .processorContainer {
+    right: 42%;
+    top: 50%;
+  }
+  
+} 

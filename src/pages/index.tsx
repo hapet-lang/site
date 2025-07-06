@@ -11,29 +11,60 @@ import Translate, {translate} from '@docusaurus/Translate';
 
 import styles from './index.module.css';
 
+
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
-    <header className={styles.heroBanner}>
-      <Processor />
-      
-      <Heading as="h1" className={styles.heroTitle}>
-        {siteConfig.title}
-      </Heading>
-      
-      <div className={styles.bottomLeftText}>
-        <Translate id="theme.Tagline">
-          More control over program actions.
-        </Translate>
+    <div className={styles.heroBanner}>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        style={{ position: 'absolute', width: 0, height: 0, visibility: 'hidden' }}
+      >
+        <filter id="grainFilter" colorInterpolationFilters="sRGB">
+          <feTurbulence
+            type="fractalNoise"
+            baseFrequency={0.65}
+            numOctaves={3}
+            stitchTiles="stitch"
+            result="noise"
+          />
+          <feDisplacementMap
+            in="SourceGraphic"
+            in2="noise"
+            scale={20}
+            xChannelSelector="R"
+            yChannelSelector="G"
+          />
+        </filter>
+      </svg>
+
+      <div className={styles.blurredBackground}>
+        
       </div>
-      
-      <div className={styles.topRightControls}>
-        <Link to="/docs" className={styles.docButton}>
-          <Translate id="theme.Docs"> Documentation </Translate>
-        </Link>
-        <LocaleDropdown />
+
+      <div className={styles.blurredProccessor}>
+        <Processor />
       </div>
-    </header>
+
+      <div className={styles.heroContents}>
+        <Heading as="h1" className={styles.heroTitle}>
+          {siteConfig.title}
+        </Heading>
+      
+        <div className={styles.bottomLeftText}>
+          <Translate id="theme.Tagline">
+            More control over program actions.
+          </Translate>
+        </div>
+        
+        <div className={styles.topRightControls}>
+          <Link to="/docs" className={styles.docButton}>
+            <Translate id="theme.Docs"> Documentation </Translate>
+          </Link>
+          <LocaleDropdown />
+        </div>
+      </div>
+    </div>
   );
 }
 

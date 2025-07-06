@@ -19,10 +19,33 @@
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
-  padding: 2rem;
+  
   box-sizing: border-box;
-  background-color: #002424;
+
   overflow: hidden;
+}
+
+.blurredBackground {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, #002424, #004e4e);
+  filter: url(#grainFilter);
+}
+
+.blurredProccessor {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  filter: blur(4px);
+}
+
+.heroContents {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  padding: 2rem;
 }
 
 .heroTitle {

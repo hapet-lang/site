@@ -324,5 +324,9 @@
   },
   "theme.Docs": {
     "message": "Документация"
+  },
+  "theme.Tagline": {
+    "message": "Больше контроля над действиями программы.",
+    "description": "The tagline on the homepage"
   }
 }

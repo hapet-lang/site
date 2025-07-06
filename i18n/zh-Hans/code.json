@@ -323,6 +323,10 @@
     "description": "The title of the tag list page"
   },
   "theme.Docs": {
-    "message": "Документация"
+    "message": "文档"
+  },
+  "theme.Tagline": {
+    "message": "对程序操作有更多控制。",
+    "description": "The tagline on the homepage"
   }
 }

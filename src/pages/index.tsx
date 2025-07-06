@@ -18,6 +18,12 @@ function HomepageHeader() {
         {siteConfig.title}
       </Heading>
       
+      <div className={styles.bottomLeftText}>
+        <Translate id="theme.Tagline">
+          More control over program actions.
+        </Translate>
+      </div>
+      
       <div className={styles.topRightControls}>
         <Link to="/docs" className={styles.docButton}>
           <Translate id="theme.Docs"> Documentation </Translate>

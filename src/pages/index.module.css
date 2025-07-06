@@ -9,6 +9,9 @@
 /* Import Sequel Sans font */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
+/* Import Montserrat font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
 .heroBanner {
   height: 100vh;
   width: 100%;
@@ -32,6 +35,18 @@
   line-height: 1.2;
 }
 
+.bottomLeftText {
+  position: absolute;
+  bottom: 4rem;
+  left: 4rem;
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 600;
+  font-size: 4rem;
+  color: white;
+  line-height: 1.3;
+  max-width: 700px;
+}
+
 .topRightControls {
   position: absolute;
   top: 2rem;
@@ -47,7 +62,7 @@
   color: white;
   padding: 0.5rem 1rem;
   text-decoration: none;
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   font-weight: 500;
   transition: color 0.3s ease;
 }
@@ -55,6 +70,103 @@
   .docButton:hover {
     color: #cccccc;
     text-decoration: none;
+  }
+
+  /* Стили для dropdown языка */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown__menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #006464;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    padding: 0.5rem 0;
+    margin: 0;
+    list-style: none;
+    min-width: 120px;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  .dropdown__menu li {
+    margin: 0;
+  }
+
+  .dropdown__menu a {
+    display: block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+  }
+
+  .dropdown__menu a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .dropdown__link--active {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+  }
+
+  /* Переопределяем стили стандартного LocaleDropdown для белого текста */
+  .topRightControls :global(.navbar__item) {
+    color: white !important;
+    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+  }
+
+  .topRightControls :global(.navbar__link) {
+    color: white !important;
+    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+  }
+
+  .topRightControls :global(.dropdown__link) {
+    color: white !important;
+    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+  }
+
+  .topRightControls :global(.dropdown__link:hover) {
+    color: white !important;
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+  }
+
+  .topRightControls :global(.dropdown__link--active) {
+    color: white !important;
+    background-color: rgba(255, 255, 255, 0.2) !important;
+    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+  }
+
+  .topRightControls :global(.dropdown__menu) {
+    background-color: #006464 !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  }
+
+  .topRightControls :global(.dropdown__menu a) {
+    color: white !important;
+    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+  }
+
+  .topRightControls :global(.dropdown__menu a:hover) {
+    color: white !important;
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+  }
+
+  /* Принудительно показываем dropdown на мобильных устройствах */
+  .topRightControls :global(.dropdown) {
+    display: inline-block !important;
+  }
+
+  .topRightControls :global(.navbar__item) {
+    display: inline-block !important;
+  }
+
+  .topRightControls :global(.navbar__link) {
+    display: inline-block !important;
   }
 
 @media screen and (max-width: 768px) {
@@ -75,6 +187,26 @@
   .docButton {
     padding: 0.4rem 0.8rem;
     font-size: 0.9rem;
+  }
+  
+  .bottomLeftText {
+    bottom: 1rem;
+    left: 1rem;
+    font-size: 2.5rem;
+    max-width: 400px;
+  }
+
+  /* Дополнительные стили для мобильной версии dropdown */
+  .topRightControls :global(.dropdown) {
+    display: inline-block !important;
+  }
+
+  .topRightControls :global(.navbar__item) {
+    display: inline-block !important;
+  }
+
+  .topRightControls :global(.navbar__link) {
+    display: inline-block !important;
   }
 }
 

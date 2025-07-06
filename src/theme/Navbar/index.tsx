@@ -7,7 +7,7 @@ import OriginalNavbar from '@theme-original/Navbar';
 export default function NavbarWrapper(props) {
   const { pathname } = useLocation();
   // скрываем navbar только на главной ("/")
-  if (pathname === '/') {
+  if (pathname === '/' || pathname === '/ru/' || pathname === '/zh-Hans/') {
     return null;
   }
   return <OriginalNavbar {...props} />;

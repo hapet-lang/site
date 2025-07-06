@@ -6,6 +6,7 @@ import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import Heading from '@theme/Heading';
 import LocaleDropdown from '@site/src/components/LocaleDropdown';
+import Translate, {translate} from '@docusaurus/Translate';
 
 import styles from './index.module.css';
 
@@ -19,7 +20,7 @@ function HomepageHeader() {
       
       <div className={styles.topRightControls}>
         <Link to="/docs" className={styles.docButton}>
-          Documentation
+          <Translate id="theme.Docs"> Documentation </Translate>
         </Link>
         <LocaleDropdown />
       </div>

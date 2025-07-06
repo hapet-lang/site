@@ -5,6 +5,7 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import Heading from '@theme/Heading';
+import LocaleDropdown from '@site/src/components/LocaleDropdown';
 
 import styles from './index.module.css';
 
@@ -15,6 +16,13 @@ function HomepageHeader() {
       <Heading as="h1" className={styles.heroTitle}>
         {siteConfig.title}
       </Heading>
+      
+      <div className={styles.topRightControls}>
+        <Link to="/docs" className={styles.docButton}>
+          Documentation
+        </Link>
+        <LocaleDropdown />
+      </div>
     </header>
   );
 }

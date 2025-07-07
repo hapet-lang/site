@@ -74,8 +74,8 @@
   animation: dotPulse 2s ease-in-out infinite;
 }
 .signalDot1 {
-  right: 200px;
-  top: -200px;
+  right: 160px;
+  top: -160px;
 }
 .signalDot2 {
   right: 20px;
@@ -100,6 +100,18 @@
 .signalDot7 {
   right: 170px;
   top: 0px;
+}
+.signalDot8 {
+  right: -280px;
+  top: 250px;
+}
+.signalDot9 {
+  right: -10px;
+  top: 210px;
+}
+.signalDot10 {
+  right: -200px;
+  top: 80px;
 }
 
 /* Одна сигнальная линия */
@@ -146,6 +158,21 @@
   top: 0px;
   animation: signalMove7 1s ease-in-out infinite;
 }
+.signalLine8 {
+  right: 40px;
+  top: 0px;
+  animation: signalMove8 0.75s ease-in-out infinite;
+}
+.signalLine9 {
+  right: 40px;
+  top: 0px;
+  animation: signalMove9 0.75s ease-in-out infinite;
+}
+.signalLine10 {
+  right: 0px;
+  top: 60px;
+  animation: signalMove10 1.15s ease-in-out infinite;
+}
 
 /* Анимации */
 @keyframes processorPulse {
@@ -183,7 +210,7 @@
   }
   50% {
     right: 80px;
-    top: -200px;
+    top: -160px;
   }
   80% {
     opacity: 1;
@@ -192,8 +219,8 @@
   100% {
     opacity: 0;
     transform: scaleX(0);
-    right: 200px;
-    top: -200px;
+    right: 160px;
+    top: -160px;
   }
 }
 
@@ -340,6 +367,81 @@
     transform: scaleX(0);
     right: 170px;
     top: 0px;
+  }
+}
+
+@keyframes signalMove8 {
+  0% {
+    opacity: 0;
+    transform: scaleX(0);
+  }
+  20% {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+  50% {
+    right: 40px;
+    top: 250px;
+  }
+  80% {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scaleX(0);
+    right: -280px;
+    top: 250px;
+  }
+}
+
+@keyframes signalMove9 {
+  0% {
+    opacity: 0;
+    transform: scaleX(0);
+  }
+  20% {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+  50% {
+    right: 40px;
+    top: 210px;
+  }
+  80% {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scaleX(0);
+    right: -10px;
+    top: 210px;
+  }
+}
+
+@keyframes signalMove10 {
+  0% {
+    opacity: 0;
+    transform: scaleX(0);
+  }
+  20% {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+  50% {
+    right: -200px;
+    top: 60px;
+  }
+  80% {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scaleX(0);
+    right: -200px;
+    top: 80px;
   }
 }
 

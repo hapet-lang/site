@@ -1,12 +1,15 @@
 import React from 'react';
 import styles from './Processor.module.css';
+import charStyles from './Char.module.css';
 
 export default function Processor(): React.ReactElement {
   return (
     <div className={styles.processorContainer}>
       {/* Основной процессор */}
       <div className={styles.processor}>
-        <div className={styles.processorCore}></div>
+        <div className={styles.processorCore}>
+          <img src="/img/Char.svg" alt="Char" className={styles.charImage} />
+        </div>
         <div className={styles.processorGlow}></div>
       </div>
       

@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from './Processor.module.css';
-import charStyles from './Char.module.css';
 
 export default function Processor(): React.ReactElement {
   return (

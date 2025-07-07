@@ -160,12 +160,12 @@
 }
 .signalLine8 {
   right: 40px;
-  top: 0px;
+  top: 80px;
   animation: signalMove8 0.75s ease-in-out infinite;
 }
 .signalLine9 {
   right: 40px;
-  top: 0px;
+  top: 80px;
   animation: signalMove9 0.75s ease-in-out infinite;
 }
 .signalLine10 {

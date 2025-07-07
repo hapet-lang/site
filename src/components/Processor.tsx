@@ -1,4 +1,5 @@
 import React from 'react';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './Processor.module.css';
 
 export default function Processor(): React.ReactElement {
@@ -7,7 +8,7 @@ export default function Processor(): React.ReactElement {
       {/* Основной процессор */}
       <div className={styles.processor}>
         <div className={styles.processorCore}>
-          <img src="/img/Char.svg" alt="Char" className={styles.charImage} />
+          <img src={useBaseUrl('/img/Char.svg')} alt="Char" className={styles.charImage} />
         </div>
         <div className={styles.processorGlow}></div>
       </div>

@@ -102,8 +102,8 @@
   top: 0px;
 }
 .signalDot8 {
-  right: -280px;
-  top: 250px;
+  right: -220px;
+  top: 240px;
 }
 .signalDot9 {
   right: -10px;
@@ -112,6 +112,30 @@
 .signalDot10 {
   right: -200px;
   top: 80px;
+}
+.signalDot11 {
+  right: -400px;
+  top: 150px;
+}
+.signalDot12 {
+  right: -170px;
+  top: 340px;
+}
+.signalDot13 {
+  right: 50px;
+  top: 350px;
+}
+.signalDot14 {
+  right: -360px;
+  top: 280px;
+}
+.signalDot15 {
+  right: -330px;
+  top: -50px;
+}
+.signalDot16 {
+  right: 230px;
+  top: 280px;
 }
 
 /* Одна сигнальная линия */
@@ -172,6 +196,36 @@
   right: 0px;
   top: 60px;
   animation: signalMove10 1.15s ease-in-out infinite;
+}
+.signalLine11 {
+  right: 30x;
+  top: 80px;
+  animation: signalMove11 1s ease-in-out infinite;
+}
+.signalLine12 {
+  right: 0px;
+  top: 80px;
+  animation: signalMove12 0.95s ease-in-out infinite;
+}
+.signalLine13 {
+  right: 80px;
+  top: 80px;
+  animation: signalMove13 0.85s ease-in-out infinite;
+}
+.signalLine14 {
+  right: 0px;
+  top: 40px;
+  animation: signalMove14 0.75s ease-in-out infinite;
+}
+.signalLine15 {
+  right: 40px;
+  top: 0px;
+  animation: signalMove15 1.05s ease-in-out infinite;
+}
+.signalLine16 {
+  right: 80px;
+  top: 60px;
+  animation: signalMove16 1.35s ease-in-out infinite;
 }
 
 /* Анимации */
@@ -381,7 +435,7 @@
   }
   50% {
     right: 40px;
-    top: 250px;
+    top: 240px;
   }
   80% {
     opacity: 1;
@@ -390,8 +444,8 @@
   100% {
     opacity: 0;
     transform: scaleX(0);
-    right: -280px;
-    top: 250px;
+    right: -220px;
+    top: 240px;
   }
 }
 
@@ -442,6 +496,156 @@
     transform: scaleX(0);
     right: -200px;
     top: 80px;
+  }
+}
+
+@keyframes signalMove11 {
+  0% {
+    opacity: 0;
+    transform: scaleX(0);
+  }
+  20% {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+  50% {
+    right: 30px;
+    top: 150px;
+  }
+  80% {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scaleX(0);
+    right: -400px;
+    top: 150px;
+  }
+}
+
+@keyframes signalMove12 {
+  0% {
+    opacity: 0;
+    transform: scaleX(0);
+  }
+  20% {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+  50% {
+    right: -170px;
+    top: 80px;
+  }
+  80% {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scaleX(0);
+    right: -170px;
+    top: 340px;
+  }
+}
+
+@keyframes signalMove13 {
+  0% {
+    opacity: 0;
+    transform: scaleX(0);
+  }
+  20% {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+  50% {
+    right: 80px;
+    top: 350px;
+  }
+  80% {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scaleX(0);
+    right: 50px;
+    top: 350px;
+  }
+}
+
+@keyframes signalMove14 {
+  0% {
+    opacity: 0;
+    transform: scaleX(0);
+  }
+  20% {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+  50% {
+    right: -360px;
+    top: 40px;
+  }
+  80% {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scaleX(0);
+    right: -360px;
+    top: 280px;
+  }
+}
+
+@keyframes signalMove15 {
+  0% {
+    opacity: 0;
+    transform: scaleX(0);
+  }
+  20% {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+  50% {
+    right: 40px;
+    top: -50px;
+  }
+  80% {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scaleX(0);
+    right: -330px;
+    top: -50px;
+  }
+}
+
+@keyframes signalMove16 {
+  0% {
+    opacity: 0;
+    transform: scaleX(0);
+  }
+  20% {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+  50% {
+    right: 230px;
+    top: 60px;
+  }
+  80% {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scaleX(0);
+    right: 230px;
+    top: 280px;
   }
 }
 

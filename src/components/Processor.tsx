@@ -24,6 +24,12 @@ export default function Processor(): React.ReactElement {
       <div className={styles.signalDot + ' ' + styles.signalDot8}></div>
       <div className={styles.signalDot + ' ' + styles.signalDot9}></div>
       <div className={styles.signalDot + ' ' + styles.signalDot10}></div>
+      <div className={styles.signalDot + ' ' + styles.signalDot11}></div>
+      <div className={styles.signalDot + ' ' + styles.signalDot12}></div>
+      <div className={styles.signalDot + ' ' + styles.signalDot13}></div>
+      <div className={styles.signalDot + ' ' + styles.signalDot14}></div>
+      <div className={styles.signalDot + ' ' + styles.signalDot15}></div>
+      <div className={styles.signalDot + ' ' + styles.signalDot16}></div>
       
       {/* Одна сигнальная линия */}
       <div className={styles.signalLine + ' ' + styles.signalLine1}></div>
@@ -36,6 +42,12 @@ export default function Processor(): React.ReactElement {
       <div className={styles.signalLine + ' ' + styles.signalLine8}></div>
       <div className={styles.signalLine + ' ' + styles.signalLine9}></div>
       <div className={styles.signalLine + ' ' + styles.signalLine10}></div>
+      <div className={styles.signalLine + ' ' + styles.signalLine11}></div>
+      <div className={styles.signalLine + ' ' + styles.signalLine12}></div>
+      <div className={styles.signalLine + ' ' + styles.signalLine13}></div>
+      <div className={styles.signalLine + ' ' + styles.signalLine14}></div>
+      <div className={styles.signalLine + ' ' + styles.signalLine15}></div>
+      <div className={styles.signalLine + ' ' + styles.signalLine16}></div>
     </div>
   );
 } 

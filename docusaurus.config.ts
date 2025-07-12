@@ -37,10 +37,18 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/hapet-lang/site/',
+          
+          editUrl: ({ locale, docPath, versionDocsDirPath, permalink, version }) => {
+             // Example logic:
+             if (locale === 'en') {
+               return `https://github.com/hapet-lang/site/blob/main/${docPath}`;
+             } else if (locale === 'ru') {
+                return `https://github.com/hapet-lang/site/blob/main/i18n/ru/docusaurus-plugin-content-docs/current/${docPath}`;
+             } else if (locale === 'zh-Hans') {
+                return `https://github.com/hapet-lang/site/blob/main/i18n/zh-Hans/docusaurus-plugin-content-docs/current/${docPath}`;
+             }
+             return undefined; // or a default URL
+           },
         },
         theme: {
           customCss: './src/css/custom.css',

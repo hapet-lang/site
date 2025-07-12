@@ -40,7 +40,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/hapet-lang/hapet-site/',
+            'https://github.com/hapet-lang/site/',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -116,6 +116,11 @@ const config: Config = {
         },
       ],
       copyright: `Copyright © ${new Date().getFullYear()} hapet, Airat Abdrakov`,
+    },
+    prism: {
+      theme: prismThemes.github,
+      darkTheme: prismThemes.dracula,
+      additionalLanguages: ['csharp'],
     }
   } satisfies Preset.ThemeConfig,
 };

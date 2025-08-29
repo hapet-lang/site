@@ -59,3 +59,28 @@ byte[] buffer = new unsafe byte[5];
 ```
 
 Обратите внимание, переменная ```buffer``` все еще будет структурного типа ```System.Array<byte>```, но буфер массива уже будет указывать на память, невидимую для сборщика мусора. 
+
+## goto
+
+Оператор ***goto*** можно использовать только внутри конструкций ***switch-case***. Для создания метки перехода, нужно использовать символ ```$```:
+
+```csharp
+ switch (fmt & 0xFFDF)
+{
+    case ('G')
+    {
+        if (digits > 0)
+            goto caseDefault;
+        else
+            goto caseD;
+    }
+    case ('D') $caseD
+    {
+        return 0;
+    }
+    default $caseDefault
+    {
+        return 1;
+    }
+}
+```

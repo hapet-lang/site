@@ -1,9 +1,8 @@
-version: '3.4'
 name: hapet-site
 
 services:
   softhub.docs:
-    image: ${DOCKER_REGISTRY-}crackanddie/softhubdocs
+    image: ${DOCKER_REGISTRY-}crackanddie/hapet
     build:
       context: .
       dockerfile: Dockerfile
@@ -13,7 +12,7 @@ services:
         limits:
           cpus: '0.50'
   softhub.docs.ru:
-    image: ${DOCKER_REGISTRY-}crackanddie/softhubdocs-ru
+    image: ${DOCKER_REGISTRY-}crackanddie/hapet-ru
     build:
       context: .
       dockerfile: Dockerfile-ru
@@ -23,7 +22,7 @@ services:
         limits:
           cpus: '0.50'
   softhub.docs.zh:
-    image: ${DOCKER_REGISTRY-}crackanddie/softhubdocs-zh
+    image: ${DOCKER_REGISTRY-}crackanddie/hapet-zh
     build:
       context: .
       dockerfile: Dockerfile-zh

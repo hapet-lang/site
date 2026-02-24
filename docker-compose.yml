@@ -1,5 +1,5 @@
 version: '3.4'
-name: softv-web
+name: hapet-site
 
 services:
   softhub.docs:
@@ -36,7 +36,7 @@ services:
     image: nginx:latest
     volumes:
       - ./nginx.conf:/etc/nginx/nginx.conf
-      - ./certs/other/selfsigned.cert:/etc/nginx/cert.crt
-      - ./certs/other/selfsigned.key:/etc/nginx/cert.rsa
+      - /etc/ssl/certs/hapet_cert.crt:/etc/nginx/cert.crt
+      - /etc/ssl/private/hapetlang.com.key:/etc/nginx/cert.rsa
     ports:
       - 5402:443

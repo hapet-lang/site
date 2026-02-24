@@ -4,6 +4,7 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
+import DownloadHapet from '@site/src/components/DownloadHapet';
 import Heading from '@theme/Heading';
 import LocaleDropdown from '@site/src/components/LocaleDropdown';
 import Translate, {translate} from '@docusaurus/Translate';
@@ -76,6 +77,7 @@ export default function Home(props): ReactNode {
       <HomepageHeader />
       <main>
         <HomepageFeatures />
+        <DownloadHapet />
       </main>
     </Layout>
   );

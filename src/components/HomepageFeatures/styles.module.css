@@ -1,4 +1,6 @@
 .features {
+  background-color: black;
+  color: black;
   display: flex;
   align-items: center;
   padding: 2rem 0;

@@ -25,13 +25,6 @@
   overflow: hidden;
 }
 
-.pureBackground {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  background: #002424;
-}
-
 .blackBackground {
   height: 100%;
   width: 100%;
@@ -45,22 +38,6 @@
   left: 20%;
   top: -40%;
   position: absolute;
-}
-
-.blurredBackground {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(135deg, #002424, #004e4e);
-  filter: url(#grainFilter);
-}
-
-.blurredProccessor {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  filter: blur(4px);
 }
 
 .heroContents {

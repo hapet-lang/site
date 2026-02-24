@@ -6,7 +6,6 @@ import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import Heading from '@theme/Heading';
 import LocaleDropdown from '@site/src/components/LocaleDropdown';
-import Processor from '@site/src/components/Processor';
 import Translate, {translate} from '@docusaurus/Translate';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
@@ -38,18 +37,6 @@ function HomepageHeader() {
           />
         </filter>
       </svg>
-
-      {/*
-      <div className={styles.pureBackground}>
-      </div>
-
-      <div className={styles.blurredBackground}>
-      </div>
-
-      <div className={styles.blurredProccessor}>
-        <Processor />
-      </div>
-      */}
 
       <div className={styles.blackBackground}>
       </div>

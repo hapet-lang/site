@@ -24,6 +24,7 @@ switch (test)
     }
 }
 ```
-Почему в конце каждого блока ***case*** нет ***break***? - потому что какой в этом смысл, если в **C#** [не разрешены *fall through cases*](https://github.com/dotnet/csharplang/discussions/603).   
+Почему в конце каждого блока ***case*** нет ***break***? - потому что какой в этом смысл, если в **C#** [не разрешены *fall through cases*](https://github.com/dotnet/csharplang/discussions/603).  
+Но вы все равно можете использовать **break** для принудительного выхода из блока.  
 
-Операторы ***goto*** пока не поддерживаются.
+Оператор ***goto*** описан [здесь](unsafe#goto).

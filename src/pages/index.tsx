@@ -55,7 +55,7 @@ function HomepageHeader() {
       
         <div className={styles.bottomLeftText}>
           <Translate id="theme.Tagline">
-            More control over program actions.
+            Yet another kakish and cringe programming language.
           </Translate>
         </div>
         

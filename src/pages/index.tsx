@@ -8,6 +8,7 @@ import Heading from '@theme/Heading';
 import LocaleDropdown from '@site/src/components/LocaleDropdown';
 import Processor from '@site/src/components/Processor';
 import Translate, {translate} from '@docusaurus/Translate';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
 import styles from './index.module.css';
 
@@ -38,6 +39,7 @@ function HomepageHeader() {
         </filter>
       </svg>
 
+      {/*
       <div className={styles.pureBackground}>
       </div>
 
@@ -46,6 +48,14 @@ function HomepageHeader() {
 
       <div className={styles.blurredProccessor}>
         <Processor />
+      </div>
+      */}
+
+      <div className={styles.blackBackground}>
+      </div>
+
+      <div className={styles.hapetRotatedBackground}>
+        <img src={useBaseUrl('/img/hapet_back.png')} alt="back" />
       </div>
 
       <div className={styles.heroContents}>

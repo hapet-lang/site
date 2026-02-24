@@ -32,6 +32,21 @@
   background: #002424;
 }
 
+.blackBackground {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background: #000000;
+}
+
+.hapetRotatedBackground {
+  height: 100%;
+  width: 100%;
+  left: 20%;
+  top: -40%;
+  position: absolute;
+}
+
 .blurredBackground {
   height: 100%;
   width: 100%;
@@ -207,14 +222,11 @@
     font-size: 2rem;
   }
   
-  .heroBanner {
-    padding: 1rem;
-  }
   
   .topRightControls {
-    top: 1rem;
-    right: 1rem;
-    gap: 0.5rem;
+    top: 2rem;
+    right: 0.5rem;
+    gap: 0.3rem;
   }
   
   .docButton {
@@ -227,6 +239,12 @@
     left: 1rem;
     font-size: 2.5rem;
     max-width: 400px;
+  }
+
+  .hapetRotatedBackground {
+    left: 0%;
+    top: 30%;
+    scale: 2;
   }
 
   /* Дополнительные стили для мобильной версии dropdown */

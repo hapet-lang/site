@@ -1,7 +1,7 @@
 name: hapet-site
 
 services:
-  softhub.docs:
+  hapet.docs:
     image: ${DOCKER_REGISTRY-}crackanddie/hapet
     build:
       context: .
@@ -11,7 +11,7 @@ services:
       resources:
         limits:
           cpus: '0.50'
-  softhub.docs.ru:
+  hapet.docs.ru:
     image: ${DOCKER_REGISTRY-}crackanddie/hapet-ru
     build:
       context: .
@@ -21,7 +21,7 @@ services:
       resources:
         limits:
           cpus: '0.50'
-  softhub.docs.zh:
+  hapet.docs.zh:
     image: ${DOCKER_REGISTRY-}crackanddie/hapet-zh
     build:
       context: .

@@ -1,16 +1,15 @@
-version: '3.4'
 name: hapet-site
 
 services:
-  softhub.docs:
+  hapet.docs:
     environment:
         - NODE_ENV=production
         - GENERATE_SOURCEMAP=false
-  softhub.docs.ru:
+  hapet.docs.ru:
     environment:
         - NODE_ENV=production
         - GENERATE_SOURCEMAP=false
-  softhub.docs.zh:
+  hapet.docs.zh:
     environment:
         - NODE_ENV=production
         - GENERATE_SOURCEMAP=false

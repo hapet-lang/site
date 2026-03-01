@@ -34,7 +34,7 @@ const OS: OsItem[] = [
 
 export default function DownloadHapet(): ReactNode {
   return (
-    <section>
+    <section id="downloads">
       <div className={styles.downloadsContainer}>
         {OS.map((o) => (
           <article key={o.name} className={styles.osBlock} aria-labelledby={`os-${o.name}`}>

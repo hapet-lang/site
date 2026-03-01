@@ -1,41 +1,16 @@
-# Website
+<p align="center">
+  <img alt="hapet logo" src="static/img/hapet.png" width="105px" />
+  <h1 align="center">hapet-lang documentation</h1>
+</p>
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+The repository holds the code and markdown source files for the [**hapet** documentation website](https://hapetlang.com).  
 
-## Installation
-
-```bash
-yarn
-```
-
-## Local Development
+### Local Development
 
 ```bash
-yarn start
+npm install
+
+npx docusaurus start
+npx docusaurus start --locale zh-Hans
+npx docusaurus start --locale ru
 ```
-
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
-
-## Build
-
-```bash
-yarn build
-```
-
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-## Deployment
-
-Using SSH:
-
-```bash
-USE_SSH=true yarn deploy
-```
-
-Not using SSH:
-
-```bash
-GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.

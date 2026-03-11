@@ -7,13 +7,32 @@ title: Небезопасный код
 
 Небезопасный код в **hapet** работает иначе. Вот главные отличия:  
 
+## Аттрибуты LibImport и DllImport  
+
+Для импорта функций из нативных библиотек используются аттрибуты ***LibImport*** и ***DllImport***.   
+
+***LibImport*** используется для импорта функций из статически скомпилированных библиотек или динамически скомпилированных библиотек с **.lib** файлом.  
+**Линковка с библиотекой происходит на этапе компиляции**, так что необходимо иметь необходимые файлы на уровне проекта или в выходной директории!  
+Пример использования:  
+```csharp
+[LibImport("SomeLibrary.lib", "SomeFunction")]
+public static extern int SomeFunction(int a, int b);
+```  
+
+***DllImport*** работает так же, как в *C#* - импортирует функцию из динамической библиотеки при первом вызове. 
+Пример использования:
+```csharp
+[DllImport("SomeDynLibrary.dll", "SomeFunction")]
+public static extern int SomeFunction(int a, int b);
+```
+
 ## arglist для импортируемых функций  
 
 В отличие от [**C#**](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/compiler-messages/expression-tree-restrictions), использование ***arglist*** в **hapet** - это нормально. Для импортируемых функций с переменным количеством параметров, этот модификатор будет необходим. Вот пример:  
 ```csharp
 public static class Console
 {
-    [DllImport("", "vprintf")]
+    [LibImport("", "vprintf")]
     public static extern int Printf(byte* format, arglist);
 }
 ```  

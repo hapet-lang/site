@@ -105,6 +105,11 @@
   box-shadow: 0 8px 20px rgba(0,0,0,0.35);
 }
 
+.pkgButton:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
 .pkgLabel {
   font-weight: 700;
   color: #ffffff;

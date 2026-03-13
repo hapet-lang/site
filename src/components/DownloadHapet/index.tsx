@@ -27,7 +27,7 @@ const OS: OsItem[] = [
     name: 'Windows',
     img: '/img/windows.svg',
     packages: [
-      { label: '.exe', sub: 'Windows 10/11', arch: ['x64', 'arm64'], links: ["" , ""] }
+      { label: '.exe', sub: 'Windows 10/11', arch: ['x64', 'arm64'], links: ["https://github.com/hapet-lang/hapet/releases/latest/download/hapet_win_x64.exe" , ""] }
     ],
   },
 ];
@@ -56,16 +56,22 @@ export default function DownloadHapet(): ReactNode {
                     </div>
 
                     <div className={styles.archButtons}>
-                        {p.arch.map((a, j) => (
-                            <button key={i} className={styles.pkgButton} type="button"
-                              onClick={(e) => {
-                                e.preventDefault();
-                                window.location.href=p.links[i];
-                              }}>
-                              <img className={styles.downloadImage} src={useBaseUrl('/img/download.svg')} alt='download' />
-                              <div className={styles.badge}>{a}</div>
-                            </button>
-                        ))}
+                        {p.arch.map((a, j) => {
+                          const link = p.links[j];
+
+                          return (
+                              <button key={i} className={styles.pkgButton} type="button" disabled={!link}
+                                onClick={(e) => {
+                                  e.preventDefault();
+                                  if (link) {
+                                    window.location.href = link;
+                                  }
+                                }}>
+                                <img className={styles.downloadImage} src={useBaseUrl('/img/download.svg')} alt='download' />
+                                <div className={styles.badge}>{a}</div>
+                              </button>
+                          );
+                        })}
                     </div>
                 </div>
               ))}

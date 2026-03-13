@@ -126,7 +126,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} hapet, Airat Abdrakov`,
+      copyright: `Copyright © 2026 hapet, Airat Abdrakov`,
     },
     prism: {
       theme: prismThemes.github,

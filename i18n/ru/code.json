@@ -328,5 +328,9 @@
   "theme.Tagline": {
     "message": "Очередной какишный и кринжовый язык программирования.",
     "description": "The tagline on the homepage"
+  },
+  "theme.Sponsors": {
+    "message": "Спонсоры",
+    "description": "-"
   }
 }

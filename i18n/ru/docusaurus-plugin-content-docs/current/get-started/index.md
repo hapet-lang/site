@@ -7,7 +7,7 @@ title: Начало работы с hapet
 
 ## Установка
 
-Перед началось работы с **hapet** необходимо скачать [собранные установщики](https://hapetlang.com/#downloads) компилятора или [собрать компилятор самому](https://github.com/hapet-lang/hapet?tab=readme-ov-file#running-from-source) (нафига?).  
+Перед началом работы с **hapet** необходимо скачать [собранный установщик](https://hapetlang.com/#downloads) компилятора или [собрать компилятор самому](https://github.com/hapet-lang/hapet?tab=readme-ov-file#running-from-source) (нафига?).  
 
 После установки можно проверить, что **hapet** работоспособен. Для этого в коммандной строке запустите эту команду:
 ```bash

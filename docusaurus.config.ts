@@ -129,8 +129,8 @@ const config: Config = {
       copyright: `Copyright © 2026 hapet, Airat Abdrakov`,
     },
     prism: {
-      theme: prismThemes.github,
-      darkTheme: prismThemes.dracula,
+      theme: prismThemes.vsLight,
+      darkTheme: prismThemes.vsDark,
       additionalLanguages: ['csharp', 'bash'],
     }
   } satisfies Preset.ThemeConfig,

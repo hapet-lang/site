@@ -10,14 +10,14 @@ title: Начало работы с hapet
 Перед началом работы с **hapet** необходимо скачать [собранный установщик](https://hapetlang.com/#downloads) компилятора или [собрать компилятор самому](https://github.com/hapet-lang/hapet?tab=readme-ov-file#running-from-source) (нафига?).  
 
 После установки можно проверить, что **hapet** работоспособен. Для этого в коммандной строке запустите эту команду:
-```bash
+```bash title="bash"
 hapet check
 ```  
 
 ## Создание проекта  
 
 Для создания проекта вы можете воспользоваться командой ```hapet new```. Пример создания проекта консольного приложения:  
-```bash
+```bash title="bash"
 hapet new console -n MyProject
 ```  
 
@@ -26,7 +26,7 @@ hapet new console -n MyProject
 ## Запуск проекта  
 
 Для запсука проекта перейдите в папку с проектом (в папку, где лежит файл с расширением *.hptproj*) и запустите команду:  
-```bash
+```bash title="bash"
 hapet run
 ```  
 

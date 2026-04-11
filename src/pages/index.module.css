@@ -198,6 +198,14 @@
     display: inline-block !important;
   }
 
+@media screen and (max-width: 1100px) {
+  .hapetRotatedBackground {
+      left: -30%;
+      top: -50%;
+      scale: 1;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .heroTitle {
     font-size: 2rem;
@@ -223,9 +231,9 @@
   }
 
   .hapetRotatedBackground {
-    left: 0%;
-    top: 30%;
-    scale: 2;
+    left: -180%;
+    top: -50%;
+    scale: 1;
   }
 
   /* Дополнительные стили для мобильной версии dropdown */

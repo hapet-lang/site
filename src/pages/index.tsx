@@ -5,6 +5,7 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import DownloadHapet from '@site/src/components/DownloadHapet';
+import HexSpiralBackground from '@site/src/components/HexRotated';
 import Sponsors from '@site/src/components/Sponsors';
 import Heading from '@theme/Heading';
 import LocaleDropdown from '@site/src/components/LocaleDropdown';
@@ -44,7 +45,8 @@ function HomepageHeader() {
       </div>
 
       <div className={styles.hapetRotatedBackground}>
-        <img src={useBaseUrl('/img/hapet_back.png')} alt="back" />
+        { /* <img src={useBaseUrl('/img/hapet_back.png')} alt="back" />*/ }
+        <HexSpiralBackground/>
       </div>
 
       <div className={styles.heroContents}>

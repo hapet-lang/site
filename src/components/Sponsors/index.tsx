@@ -9,9 +9,10 @@ import Translate, {translate} from '@docusaurus/Translate';
 type Sponsor = { src: string; href: string; alt: string; height: number; };
 
 const sponsors: Sponsor[] = [
-    { src: '/img/sponsors/softv.png', href: 'https://softv.su', alt: 'Sponsor 1', height: 74 },
+    { src: '/img/sponsors/softv-2.png', href: 'https://softv.su', alt: 'Sponsor 1', height: 64 },
     { src: '/img/sponsors/algaritm.png', href: 'https://algaritm.pro', alt: 'Sponsor 2', height: 74 },
     { src: '/img/sponsors/pylab.png', href: 'https://www.rustore.ru/catalog/app/su.softv.pylab', alt: 'Sponsor 3', height: 44 },
+    { src: '/img/sponsors/eidos-medicine.png', href: 'https://eidos-medicine.com/', alt: 'Sponsor 4', height: 74 },
   ];
 
 export default function Sponsors(): ReactNode {

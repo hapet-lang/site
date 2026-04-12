@@ -3,6 +3,8 @@ sidebar_position: 20
 title: Конструкция switch/case
 ---
 
+# Конструкция switch/case  
+
 В языке **hapet** конструкция ***switch/case*** выглядит иначе, по сравнению с C-подобными языками. Пример:
 ```csharp
 int test = 2;

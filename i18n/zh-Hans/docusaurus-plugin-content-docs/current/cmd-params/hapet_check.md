@@ -5,14 +5,14 @@ title: hapet check
 
 # hapet check  
 
-## Usage
+## 用法
 
-The ```hapet check``` command can be used to verify the functionality of the **hapet** compiler. Example of usage:
+```hapet check``` 命令可用于验证 **hapet** 编译器的功能。使用示例：
 ```bash title="bash"
 hapet check
 ```  
 
-Example output of ```hapet check```:
+```hapet check``` 的输出示例：
 ```bash title="bash"
 user>hapet check
 Linker: OK

@@ -1,6 +1,6 @@
 ---
 sidebar_position: 20
-title: switch/case 语句
+title: Switch/Case 语句
 ---
 
 # Switch/Case 语句  

@@ -20,5 +20,5 @@ namespace CustomNamespace;
 
 如果未指定命名空间，它将自动指定为：  
 ```csharp
-namespace ProjectName.PathToFile;
+namespace ProjectName.Path.To.File;
 ```

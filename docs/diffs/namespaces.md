@@ -20,5 +20,5 @@ Specifying a namespace using curly braces ```namespace { ... }``` is **not allow
 
 If no namespace is specified, it will be automatically designated as:  
 ```csharp
-namespace ProjectName.PathToFile;
+namespace ProjectName.Path.To.File;
 ```

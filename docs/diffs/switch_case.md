@@ -1,9 +1,9 @@
 ---
 sidebar_position: 20
-title: switch/case Statement
+title: Switch/Case statement
 ---
 
-# Switch/Case Statement  
+# Switch/Case statement  
 
 In the **hapet** programming language, the ***switch/case*** statement looks different compared to C-like languages. Example:
 ```csharp

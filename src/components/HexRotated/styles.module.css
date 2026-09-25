@@ -1,18 +1,28 @@
-.hex {
+.background {
   position: absolute;
+  display: block;
+  width: 1642px;
+  height: 1405px;
   max-width: none;
-  max-height: none;
-  opacity: 0;
-  transform-origin: center;
-  animation: hexAppear 2s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
-  filter: saturate(1.05);
+  pointer-events: none;
+}
+
+.hex {
+  opacity: var(--hex-opacity, 1);
+  animation: hexAppear 2s cubic-bezier(0.2, 0.8, 0.2, 1) backwards;
 }
 
 @keyframes hexAppear {
-  0% {
+  from {
     opacity: 0;
   }
-  100% {
-    opacity: 1;
+  to {
+    opacity: var(--hex-opacity, 1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hex {
+    animation: none;
   }
 }
